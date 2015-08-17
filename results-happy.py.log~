@@ -1,0 +1,11 @@
+15:45:22 - happy.py - RESULTS - Testcase 211: FAILED
+15:45:22 - happy.py - RESULTS - Testcase 211:
+Traceback (most recent call last):
+  File "/home/denny/test/oeqa/utils/decorators.py", line 97, in wrapped_f
+    return func(*args)
+  File "/home/denny/test/oeqa/utils/decorators.py", line 86, in wrapped_f
+    return f(*args)
+  File "/home/denny/test/date.py", line 20, in test_date
+    self.assertTrue(p, msg="The date was not set correctly, output: %s" % output)
+AssertionError: None is not true : The date was not set correctly, output: Tue, 09 Aug 2016 10:00:06 +0800
+

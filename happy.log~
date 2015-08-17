@@ -1,0 +1,18 @@
+[Running]$ ssh -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR 172.23.216.123  . /etc/profile; date +"%Y-%m-%d %T"
+2016-08-09 10:00:48
+[Command returned '0' after 5.06 seconds]
+[Running]$ ssh -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR 172.23.216.123  . /etc/profile; date -s "2016-08-09 10:00:00"
+Permission denied, please try again.
+Permission denied, please try again.
+Permission denied (publickey,password).
+[Command returned '255' after 9.75 seconds]
+[Running]$ ssh -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR root@172.23.216.123  . /etc/profile; date +"%Y-%m-%d %T"
+2016-08-09 10:04:22
+[Command returned '0' after 6.39 seconds]
+[Running]$ ssh -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR root@172.23.216.123  . /etc/profile; date -s "2016-08-09 10:00:00"
+Permission denied, please try again.
+Tue Aug  9 10:00:00 CST 2016
+[Command returned '0' after 10.24 seconds]
+[Running]$ ssh -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR root@172.23.216.123  . /etc/profile; date -R
+Tue, 09 Aug 2016 10:00:06 +0800
+[Command returned '0' after 6.36 seconds]

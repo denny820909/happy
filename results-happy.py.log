@@ -1,0 +1,18 @@
+17:13:12 - happy.py - RESULTS - Testcase 203: PASSED
+17:13:13 - happy.py - RESULTS - Testcase test_gpp2_compile: FAILED
+17:13:13 - happy.py - RESULTS - Testcase test_gpp2_compile:
+Traceback (most recent call last):
+  File "/home/denny/test/gcc.py", line 35, in test_gpp2_compile
+    self.assertEqual(status, 0, msg="g++ compile failed, output: %s" % output)
+AssertionError: 127 != 0 : g++ compile failed, output: bash: g++: command not found
+
+17:13:13 - happy.py - RESULTS - Testcase 200: FAILED
+17:13:13 - happy.py - RESULTS - Testcase 200:
+Traceback (most recent call last):
+  File "/home/denny/test/oeqa/utils/decorators.py", line 97, in wrapped_f
+    return func(*args)
+  File "/home/denny/test/gcc.py", line 29, in test_gpp_compile
+    self.assertEqual(status, 0, msg="g++ compile failed, output: %s" % output)
+AssertionError: 127 != 0 : g++ compile failed, output: bash: g++: command not found
+
+17:13:14 - happy.py - RESULTS - Testcase 204: PASSED

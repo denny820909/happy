@@ -1,0 +1,7 @@
+import sys
+import newTest
+
+# if new: execute the newTest, else: execute the oldTest
+def start( new = True ):
+    
+    # execute the newTest

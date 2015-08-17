@@ -1,0 +1,101 @@
+[Running]$ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR /oeqa/runtime/files/test.c root@172.23.216.123:/tmp/test.c
+/oeqa/runtime/files/test.c: No such file or directory[Command returned '1' after 5.50 seconds]
+[Running]$ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR oeqa/runtime/files/test.c root@172.23.216.123:/tmp/test.c
+[Command returned '0' after 3.75 seconds]
+[Running]$ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR oeqa/runtime/files/testmakefile root@172.23.216.123:/tmp/testmakefile
+[Command returned '0' after 2.99 seconds]
+[Running]$ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR oeqa/runtime/files/test.cpp root@172.23.216.123:/tmp/test.cpp
+[Command returned '0' after 2.59 seconds]
+[Running]$ ssh -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR 172.23.216.123  . /etc/profile; gcc /tmp/test.c -o /tmp/test -lm
+[Command returned '0' after 5.60 seconds]
+[Running]$ ssh -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR 172.23.216.123  . /etc/profile; /tmp/test
+convert: 10 => 10.000000
+floorf(1234.670000) = 1234.000000
+[Command returned '0' after 2.35 seconds]
+[Running]$ ssh -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR 172.23.216.123  . /etc/profile; g++ /tmp/test.cpp -o /tmp/test -lm
+bash: g++: command not found
+[Command returned '127' after 3.21 seconds]
+[Running]$ ssh -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR 172.23.216.123  . /etc/profile; g++ /tmp/test.c -o /tmp/test -lm
+bash: g++: command not found
+[Command returned '127' after 3.11 seconds]
+[Running]$ ssh -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR 172.23.216.123  . /etc/profile; cd /tmp; make -f testmakefile
+gcc -c test.c
+gcc -o test test.o -lm
+[Command returned '0' after 3.02 seconds]
+[Running]$ ssh -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR 172.23.216.123  . /etc/profile; rm /tmp/test.c /tmp/test.o /tmp/test /tmp/testmakefile
+[Command returned '0' after 3.01 seconds]
+[Running]$ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR oeqa/runtime/files/test.c root@172.23.216.123:/tmp/test.c
+[Command returned '0' after 2.90 seconds]
+[Running]$ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR oeqa/runtime/files/testmakefile root@172.23.216.123:/tmp/testmakefile
+[Command returned '0' after 2.81 seconds]
+[Running]$ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR oeqa/runtime/files/test.cpp root@172.23.216.123:/tmp/test.cpp
+[Command returned '0' after 2.70 seconds]
+[Running]$ ssh -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR 172.23.216.123  . /etc/profile; gcc /tmp/test.c -o /tmp/test -lm
+[Command returned '0' after 6.02 seconds]
+[Running]$ ssh -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR 172.23.216.123  . /etc/profile; /tmp/test
+convert: 10 => 10.000000
+floorf(1234.670000) = 1234.000000
+[Command returned '0' after 2.66 seconds]
+[Running]$ ssh -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR 172.23.216.123  . /etc/profile; g++ /tmp/test.cpp -o /tmp/test -lm
+[Command returned '0' after 3.12 seconds]
+[Running]$ ssh -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR 172.23.216.123  . /etc/profile; /tmp/test
+[Command returned '0' after 3.60 seconds]
+[Running]$ ssh -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR 172.23.216.123  . /etc/profile; g++ /tmp/test.c -o /tmp/test -lm
+[Command returned '0' after 3.77 seconds]
+[Running]$ ssh -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR 172.23.216.123  . /etc/profile; /tmp/test
+convert: 10 => 10.000000
+floorf(1234.670000) = 1234.000000
+[Command returned '0' after 2.35 seconds]
+[Running]$ ssh -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR 172.23.216.123  . /etc/profile; cd /tmp; make -f testmakefile
+gcc -c test.c
+gcc -o test test.o -lm
+[Command returned '0' after 2.00 seconds]
+[Running]$ ssh -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR 172.23.216.123  . /etc/profile; rm /tmp/test.c /tmp/test.o /tmp/test /tmp/testmakefile
+[Command returned '0' after 2.44 seconds]
+[Running]$ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR oeqa/runtime/files/test.c root@172.23.216.123:/tmp/test.c
+[Command returned '0' after 3.06 seconds]
+[Running]$ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR oeqa/runtime/files/testmakefile root@172.23.216.123:/tmp/testmakefile
+Permission denied, please try again.
+Permission denied, please try again.
+Permission denied (publickey,password).
+lost connection[Command returned '1' after 3.52 seconds]
+[Running]$ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR oeqa/runtime/files/test.c root@172.23.216.123:/tmp/test.c
+[Running]$ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR oeqa/runtime/files/test.c root@172.23.216.123:/tmp/test.c
+[Running]$ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR oeqa/runtime/files/test.c root@172.23.216.123:/tmp/test.c
+[Running]$ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR oeqa/runtime/files/test.c root@172.23.216.12:/tmp/test.c
+Permission denied, please try again.
+Permission denied, please try again.
+Permission denied (publickey,password).
+lost connection[Command returned '1' after 9.66 seconds]
+[Running]$ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR oeqa/runtime/files/test.c root@172.23.216.12:/tmp/test.c
+[Command returned '0' after 0.45 seconds]
+[Running]$ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR oeqa/runtime/files/testmakefile root@172.23.216.12:/tmp/testmakefile
+[Command returned '0' after 0.54 seconds]
+[Running]$ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR oeqa/runtime/files/test.cpp root@172.23.216.12:/tmp/test.cpp
+[Command returned '0' after 0.42 seconds]
+[Running]$ ssh -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR 172.23.216.12  . /etc/profile; gcc /tmp/test.c -o /tmp/test -lm
+[Command returned '0' after 1.42 seconds]
+[Running]$ ssh -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR 172.23.216.12  . /etc/profile; /tmp/test
+convert: 10 => 10.000000
+floorf(1234.670000) = 1234.000000
+[Command returned '0' after 0.43 seconds]
+[Running]$ ssh -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR 172.23.216.12  . /etc/profile; g++ /tmp/test.cpp -o /tmp/test -lm
+bash: g++: command not found
+[Command returned '127' after 0.39 seconds]
+[Running]$ ssh -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR 172.23.216.12  . /etc/profile; g++ /tmp/test.c -o /tmp/test -lm
+bash: g++: command not found
+[Command returned '127' after 0.39 seconds]
+[Running]$ ssh -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR 172.23.216.12  . /etc/profile; cd /tmp; make -f testmakefile
+gcc -c test.c
+gcc -o test test.o -lm
+[Command returned '0' after 0.48 seconds]
+[Running]$ ssh -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR 172.23.216.12  . /etc/profile; rm /tmp/test.c /tmp/test.o /tmp/test /tmp/testmakefile
+[Command returned '0' after 0.45 seconds]
+[Running]$ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR oeqa/runtime/files/test.c root@172.23.216.12:/tmp/test.c
+Permission denied, please try again.
+Permission denied, please try again.
+Permission denied (publickey,password).
+lost connection[Command returned '1' after 7.89 seconds]
+[Running]$ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR oeqa/runtime/files/test.c root@172.23.216.12:/tmp/test.c
+[Running]$ ssh -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR 172.23.216.12  . /etc/profile; login --help
+[Running]$ ssh -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR 172.23.216.12  . /etc/profile; login --help
