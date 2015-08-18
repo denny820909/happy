@@ -16,3 +16,7 @@ def start( new = True ):
 	    print "- OK - All required tests passed"
 	else:
 	    print ("- FAILED - check the task log and the ssh log")
+
+if __name__ == '__main__': 
+    start() 
+
