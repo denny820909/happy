@@ -9,7 +9,7 @@ from oeqa.utils.sshcontrol import SSHControl
 
 # original: parsing parameters from local.conf
 class TestContext(object):
-        def __init__(self):
+        def __init__(self,target):
             self.testslist = ["oeqa.runtime.pam"]
             # self.testsrequired = ["date","logrotate"]        
             self.target = target

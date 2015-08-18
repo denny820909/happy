@@ -1,0 +1,13 @@
+10:29:56 - runTest.py - RESULTS - Testcase 287: FAILED
+10:29:56 - runTest.py - RESULTS - Testcase 287:
+Traceback (most recent call last):
+  File "/home/denny/test/oeqa/utils/decorators.py", line 97, in wrapped_f
+    return func(*args)
+  File "/home/denny/test/oeqa/utils/decorators.py", line 86, in wrapped_f
+    return f(*args)
+  File "/home/denny/test/oeqa/runtime/pam.py", line 19, in test_pam
+    self.assertEqual(status, 1, msg = "login command does not work as expected. Status and output:%s and %s" %(status, output))
+AssertionError: 255 != 1 : login command does not work as expected. Status and output:255 and Permission denied, please try again.
+Permission denied, please try again.
+Permission denied (publickey,password).
+

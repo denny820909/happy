@@ -99,3 +99,8 @@ lost connection[Command returned '1' after 7.89 seconds]
 [Running]$ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR oeqa/runtime/files/test.c root@172.23.216.12:/tmp/test.c
 [Running]$ ssh -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR 172.23.216.12  . /etc/profile; login --help
 [Running]$ ssh -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR 172.23.216.12  . /etc/profile; login --help
+[Running]$ ssh -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR 172.23.216.12  . /etc/profile; login --help
+Permission denied, please try again.
+Permission denied, please try again.
+Permission denied (publickey,password).
+[Command returned '255' after 6.06 seconds]
